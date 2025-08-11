@@ -754,86 +754,12 @@
 
         // --- Dữ liệu mẫu về nhân viên để hỗ trợ tìm kiếm (Search help) ---
         const employeeData = [
-            { name: 'Đoàn Xuân Toản', unit: 'Văn phòng' },
-            { name: 'Nguyễn Thị Thu', unit: 'Ban NVT' },
-            { name: 'Nguyễn Thu Trà', unit: 'Ban QLTT' },
-            { name: 'Nguyễn Thị Thanh Hằng', unit: 'Ban CS' },
-            { name: 'Nguyễn Đức Dương', unit: 'Ban TVQT' },
-            { name: 'Nguyễn Thị Lan Anh', unit: 'Ban PC' },
-            { name: 'Nguyễn Tiến Trung', unit: 'Ban KT' },
-            { name: 'Phạm Thị Tuyết Lan', unit: 'Ban DTTK' },
-            { name: 'Dương Văn Hùng', unit: 'Ban TCCB' },
-            { name: 'Phạm Quang Toàn', unit: 'Ban CĐS' },
-            { name: 'Cáp Quý Phúc', unit: 'CCT TMĐT' },
-            { name: 'Lưu Nguyên Trí', unit: 'Ban CĐS' },
-            { name: 'Phạm Thị Minh Hiền', unit: 'Ban CS' },
-            { name: 'Kiều Ngọc Anh', unit: 'Ban DTTK' },
-            { name: 'Lê Thị Chinh', unit: 'Ban NVT' },
-            { name: 'Nguyễn Thị Thu Hường', unit: 'Ban NVT' },
-            { name: 'Nguyễn Minh Thao', unit: 'Ban PC' },
-            { name: 'Nguyễn Thị Huyền Mỹ', unit: 'Ban QLTT' },
-            { name: 'Đào Duy Bẩy', unit: 'Ban QLTT' },
-            { name: 'Nguyễn Tiến Quỳnh', unit: 'Ban TCCB' },
-            { name: 'Tô Kim Phượng', unit: 'Ban KT' },
-            { name: 'Nguyễn Nam Hải', unit: 'Ban KT' },
-            { name: 'Bùi Xuân Thành', unit: 'Ban TVQT' },
-            { name: 'Nguyễn Tiến Hưng', unit: 'CCT DNL' },
-            { name: 'Ngô Thị Thùy Linh', unit: 'CCT TMĐT' },
-            { name: 'Lê Thị Thanh Vân', unit: 'CCT DNL' },
-            { name: 'Nguyễn Thị Kim Oanh', unit: 'CCT DNL' },
-            { name: 'Lương Hồng Hải', unit: 'CCT DNL' },
-            { name: 'Nguyễn Thị Thùy Linh', unit: 'CCT TMĐT' },
-            { name: 'Đặng Thị Dịu', unit: 'Ban CĐS' },
-            { name: 'Nguyễn Thị Tuyết Lê', unit: 'Ban CĐS' },
-            { name: 'Nguyễn Mạnh Tùng', unit: 'Ban CĐS' },
-            { name: 'Lê Thị Hiền', unit: 'Ban CĐS' },
-            { name: 'Trương Phương Thảo', unit: 'Ban CS' },
-            { name: 'Nguyễn Thị Lan Hương', unit: 'Ban CS' },
-            { name: 'Nguyễn Ngọc Oanh', unit: 'Ban DTTK' },
-            { name: 'Vũ Thị Thúy', unit: 'Ban DTTK' },
-            { name: 'Lê Mai Quyên', unit: 'Ban PC' },
-            { name: 'Nguyễn Thu Hồng', unit: 'Ban PC' },
-            { name: 'Phạm Quang Hưng', unit: 'Ban PC' },
-            { name: 'Phạm Mạnh Cường', unit: 'Ban QLTT' },
-            { name: 'Nguyễn Thị Ngọc Thu', unit: 'Ban QLTT' },
-            { name: 'Nguyễn Mạnh Hùng', unit: 'Ban QLTT' },
-            { name: 'Bùi Nam Thắng', unit: 'Ban QLTT' },
-            { name: 'Nguyễn Vũ Thùy Dương', unit: 'Ban QLTT' },
-            { name: 'Nguyễn Hải Hà', unit: 'Ban QLTT' },
-            { name: 'Nguyễn Thương Huyền', unit: 'Ban QLTT' },
-            { name: 'Đào Anh Trang', unit: 'Ban QLTT' },
-            { name: 'Trần Hồng Quân', unit: 'Ban TCCB' },
-            { name: 'Nguyễn Xuân Tú', unit: 'Ban TCCB' },
-            { name: 'Hoàng Đình Cường', unit: 'Ban KT' },
-            { name: 'Ngô Thị Thu Hương', unit: 'Ban KT' },
-            { name: 'Nguyễn Thị Mai Hương', unit: 'Ban KT' },
-            { name: 'Đàm Ngọc Linh', unit: 'Ban KT' },
-            { name: 'Phạm Thị Hà (NVT)', unit: 'Ban NVT' },
-            { name: 'Trần Thị Quỳnh Anh', unit: 'Ban KT' },
-            { name: 'Nguyễn Thị Hoài Hương', unit: 'Ban KT' },
-            { name: 'Trần Thị Thu Thắm', unit: 'Ban KT' },
-            { name: 'Vũ Thị Huyền', unit: 'Ban KT' },
-            { name: 'Nguyễn Tuấn Anh', unit: 'Ban KT' },
-            { name: 'Phạm Thị Hà (KT)', unit: 'Ban KT' },
-            { name: 'Trần Văn Cường', unit: 'Ban KT' },
-            { name: 'Nguyễn Hồng Hạnh', unit: 'Ban TVQT' },
-            { name: 'Hoàng Thị Gấm', unit: 'Ban TVQT' },
-            { name: 'Lưu Thị Tân Phương', unit: 'Ban NVT' },
-            { name: 'Nguyễn Thị Ánh Nguyệt', unit: 'Ban NVT' },
-            { name: 'Ngôn Thị Mai Hương', unit: 'Ban NVT' },
-            { name: 'Bùi Việt Hà', unit: 'Ban NVT' },
-            { name: 'Giang Bảo Ngọc', unit: 'Ban NVT' },
-            { name: 'Phạm Thị Lan Anh', unit: 'Ban NVT' },
-            { name: 'Bùi Thanh Hương', unit: 'Ban NVT' },
-            { name: 'Đỗ Hoàng Tuấn', unit: 'Ban NVT' },
-            { name: 'Trần Thị Thu Huyền', unit: 'Ban NVT' },
-            { name: 'Bùi Thị Bích Hạnh', unit: 'Ban NVT' },
-            { name: 'Nguyễn Thị Trinh', unit: 'Ban NVT' },
-            { name: 'Nguyễn Thu Thủy', unit: 'Ban NVT' },
-            { name: 'Nguyễn Anh Tuấn', unit: 'Ban NVT' },
-            { name: 'Vũ Thị Thu Thủy', unit: 'Ban NVT' },
-            { name: 'Nguyễn Hải Anh', unit: 'Ban NVT' },
-
+            { name: 'Nguyễn Văn A', unit: 'Cục Thuế Hà Nội' },
+            { name: 'Trần Thị B', unit: 'Cục Thuế TP. Hồ Chí Minh' },
+            { name: 'Lê Văn C', unit: 'Chi cục Thuế Quận 1' },
+            { name: 'Phạm Thị D', unit: 'Chi cục Thuế Cầu Giấy' },
+            { name: 'Võ Đình E', unit: 'Cục Thuế Đà Nẵng' },
+            { name: 'Nguyễn Thanh F', unit: 'Văn phòng Cục' },
         ];
         
         // --- Ánh xạ các key câu hỏi với văn bản đầy đủ ---
@@ -969,7 +895,13 @@
                     submissions.push(doc.data());
                 });
                 
-                renderResults(submissions);
+                renderResults(submissions)
+                // Sắp xếp submissions theo thời gian mới nhất → cũ nhất
+                submissions.sort((a, b) => {
+                const ta = new Date(a.timestamp || 0).getTime();
+                const tb = new Date(b.timestamp || 0).getTime();
+                return tb - ta;
+                });
             });
         };
 
@@ -1081,8 +1013,18 @@
                                         <h3 class="text-2xl font-semibold mb-4">Kết quả chi tiết khảo sát</h3>
                                         <div class="mb-4">
                                             <input type="text" id="search-respondent" placeholder="Tìm kiếm theo tên người trả lời..." class="w-full p-3 rounded-xl bg-white bg-opacity-50 backdrop-blur-sm border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all">
+                                        <div class="mb-4">
+                                            <input
+                                                type="text"
+                                                id="search-unit"
+                                                placeholder="Tìm kiếm theo Đơn vị công tác..."
+                                                class="w-full p-3 rounded-xl bg-white bg-opacity-50 backdrop-blur-sm border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all"
+                                            >
+                                            </div>
                                         </div>
-                                        <div id="detailedResultsList" class="space-y-4">`;
+                                        <div class="flex items-center justify-end gap-2 mb-2">
+                                            
+                                        <div id="detailedResultsList" class="space-y-4 max-h-[360px] overflow-auto pr-2 snap-y snap-mandatory">`;
             
             submissions.forEach((submission) => {
                 const respondentName = submission.respondent_name || "Người ẩn danh";
@@ -1090,7 +1032,9 @@
                 const timestamp = submission.timestamp ? new Date(submission.timestamp) : null;
                 const formattedDate = timestamp ? `${timestamp.getHours()}:${timestamp.getMinutes()} ngày ${timestamp.getDate()}/${timestamp.getMonth() + 1}/${timestamp.getFullYear()}` : 'Không rõ thời gian';
                 
-                detailedResultsHTML += `<div class="detailed-result-card visible" data-name="${respondentName.toLowerCase()}">
+                detailedResultsHTML += `<div class="detailed-result-card visible snap-start"
+                    data-name="${respondentName.toLowerCase()}"
+                    data-unit="${unit.toLowerCase()}">  
                                             <div class="detailed-result-header">
                                                 <p><span class="font-bold">${respondentName}</span> - ${unit} <br><span class="text-sm text-gray-500">${formattedDate}</span></p>
                                                 <span class="toggle-icon"><i class="fas fa-chevron-down"></i></span>
@@ -1127,7 +1071,8 @@
                                      </div>`;
 
             resultsContent.innerHTML += detailedResultsHTML;
-            
+
+                       
             // Add event listeners for accordion functionality
             document.querySelectorAll('.detailed-result-header').forEach(header => {
                 header.addEventListener('click', () => {
@@ -1142,20 +1087,45 @@
                     }
                 });
             });
+            // START: Scroll controls 
+            const listEl = document.getElementById('detailedResultsList');
+                const btnUp = document.getElementById('scroll-up');
+                const btnDown = document.getElementById('scroll-down');
+
+                if (btnUp && btnDown && listEl) {
+                    btnUp.addEventListener('click', () => {
+                    listEl.scrollBy({ top: -400, behavior: 'smooth' });
+                    });
+                    btnDown.addEventListener('click', () => {
+                    listEl.scrollBy({ top: 400, behavior: 'smooth' });
+                    });
+                }
 
             // Add search functionality
-            const searchInput = document.getElementById('search-respondent');
-            searchInput.addEventListener('input', (e) => {
-                const searchValue = e.target.value.toLowerCase();
+            const searchNameInput = document.getElementById('search-respondent');
+            const searchUnitInput = document.getElementById('search-unit');
+
+            function applyFilters() {
+                const nameVal = (searchNameInput.value || '').toLowerCase().trim();
+                const unitVal = (searchUnitInput.value || '').toLowerCase().trim();
+
                 document.querySelectorAll('.detailed-result-card').forEach(card => {
-                    const name = card.getAttribute('data-name');
-                    if (name.includes(searchValue)) {
-                        card.classList.add('visible');
-                    } else {
-                        card.classList.remove('visible');
-                    }
+                const name = (card.getAttribute('data-name') || '').toLowerCase();
+                const unit = (card.getAttribute('data-unit') || '').toLowerCase();
+
+                const matchName = !nameVal || name.includes(nameVal);
+                const matchUnit = !unitVal || unit.includes(unitVal);
+
+                if (matchName && matchUnit) {
+                    card.classList.add('visible');
+                } else {
+                    card.classList.remove('visible');
+                }
                 });
-            });
+            }
+
+            searchNameInput.addEventListener('input', applyFilters);
+            searchUnitInput.addEventListener('input', applyFilters);
         };
         
         // --- Logic chuyển đổi giao diện ---
@@ -1211,6 +1181,3 @@
     </script>
 </body>
 </html>
-
-
-
