@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khảo sát ý kiến về Dự thảo Quy trình nghiệp vụ khung</title>
+    <title>Khảo sát về Dự thảo Khung Quy trình nghiệp vụ</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -754,12 +754,86 @@
 
         // --- Dữ liệu mẫu về nhân viên để hỗ trợ tìm kiếm (Search help) ---
         const employeeData = [
-            { name: 'Nguyễn Văn A', unit: 'Cục Thuế Hà Nội' },
-            { name: 'Trần Thị B', unit: 'Cục Thuế TP. Hồ Chí Minh' },
-            { name: 'Lê Văn C', unit: 'Chi cục Thuế Quận 1' },
-            { name: 'Phạm Thị D', unit: 'Chi cục Thuế Cầu Giấy' },
-            { name: 'Võ Đình E', unit: 'Cục Thuế Đà Nẵng' },
-            { name: 'Nguyễn Thanh F', unit: 'Văn phòng Cục' },
+            { name: 'Nguyễn Thị Lan Anh', unit: 'Ban PC' },
+            { name: 'Kiều Ngọc Anh', unit: 'Ban DTTK' },
+            { name: 'Trần Thị Quỳnh Anh', unit: 'Ban KT' },
+            { name: 'Nguyễn Tuấn Anh', unit: 'Ban KT' },
+            { name: 'Phạm Thị Lan Anh', unit: 'Ban NVT' },
+            { name: 'Nguyễn Hải Anh', unit: 'Ban NVT' },
+            { name: 'Đào Duy Bẩy', unit: 'Ban QLTT' },
+            { name: 'Lê Thị Chinh', unit: 'Ban NVT' },
+            { name: 'Phạm Mạnh Cường', unit: 'Ban QLTT' },
+            { name: 'Hoàng Đình Cường', unit: 'Ban KT' },
+            { name: 'Trần Văn Cường', unit: 'Ban KT' },
+            { name: 'Đặng Thị Dịu', unit: 'Ban CĐS' },
+            { name: 'Nguyễn Đức Dương', unit: 'Ban TVQT' },
+            { name: 'Nguyễn Vũ Thùy Dương', unit: 'Ban QLTT' },
+            { name: 'Hoàng Thị Gấm', unit: 'Ban TVQT' },
+            { name: 'Phạm Thị Hà (KT)', unit: 'Ban KT' },
+            { name: 'Phạm Thị Hà (NVT)', unit: 'Ban NVT' },
+            { name: 'Nguyễn Hải Hà', unit: 'Ban QLTT' },
+            { name: 'Bùi Việt Hà', unit: 'Ban NVT' },
+            { name: 'Nguyễn Nam Hải', unit: 'Ban KT' },
+            { name: 'Lương Hồng Hải', unit: 'CCT DNL' },
+            { name: 'Nguyễn Thị Thanh Hằng', unit: 'Ban CS' },
+            { name: 'Nguyễn Hồng Hạnh', unit: 'Ban TVQT' },
+            { name: 'Bùi Thị Bích Hạnh', unit: 'Ban NVT' },
+            { name: 'Phạm Thị Minh Hiền', unit: 'Ban CS' },
+            { name: 'Lê Thị Hiền', unit: 'Ban CĐS' },
+            { name: 'Nguyễn Thu Hồng', unit: 'Ban PC' },
+            { name: 'Dương Văn Hùng', unit: 'Ban TCCB' },
+            { name: 'Nguyễn Mạnh Hùng', unit: 'Ban QLTT' },
+            { name: 'Nguyễn Tiến Hưng', unit: 'CCT DNL' },
+            { name: 'Phạm Quang Hưng', unit: 'Ban PC' },
+            { name: 'Nguyễn Thị Lan Hương', unit: 'Ban CS' },
+            { name: 'Ngô Thị Thu Hương', unit: 'Ban KT' },
+            { name: 'Nguyễn Thị Mai Hương', unit: 'Ban KT' },
+            { name: 'Nguyễn Thị Hoài Hương', unit: 'Ban KT' },
+            { name: 'Ngôn Thị Mai Hương', unit: 'Ban NVT' },
+            { name: 'Bùi Thanh Hương', unit: 'Ban NVT' },
+            { name: 'Nguyễn Thị Thu Hường', unit: 'Ban NVT' },
+            { name: 'Nguyễn Thương Huyền', unit: 'Ban QLTT' },
+            { name: 'Vũ Thị Huyền', unit: 'Ban KT' },
+            { name: 'Trần Thị Thu Huyền', unit: 'Ban NVT' },
+            { name: 'Phạm Thị Tuyết Lan', unit: 'Ban DTTK' },
+            { name: 'Nguyễn Thị Tuyết Lê', unit: 'Ban CĐS' },
+            { name: 'Ngô Thị Thùy Linh', unit: 'CCT TMĐT' },
+            { name: 'Nguyễn Thị Thùy Linh', unit: 'CCT TMĐT' },
+            { name: 'Đàm Ngọc Linh', unit: 'Ban KT' },
+            { name: 'Nguyễn Thị Huyền Mỹ', unit: 'Ban QLTT' },
+            { name: 'Giang Bảo Ngọc', unit: 'Ban NVT' },
+            { name: 'Nguyễn Thị Ánh Nguyệt', unit: 'Ban NVT' },
+            { name: 'Nguyễn Thị Kim Oanh', unit: 'CCT DNL' },
+            { name: 'Nguyễn Ngọc Oanh', unit: 'Ban DTTK' },
+            { name: 'Cáp Quý Phúc', unit: 'CCT TMĐT' },
+            { name: 'Lưu Thị Tân Phương', unit: 'Ban NVT' },
+            { name: 'Tô Kim Phượng', unit: 'Ban KT' },
+            { name: 'Trần Hồng Quân', unit: 'Ban TCCB' },
+            { name: 'Lê Mai Quyên', unit: 'Ban PC' },
+            { name: 'Nguyễn Tiến Quỳnh', unit: 'Ban TCCB' },
+            { name: 'Trần Thị Thu Thắm', unit: 'Ban KT' },
+            { name: 'Bùi Nam Thắng', unit: 'Ban QLTT' },
+            { name: 'Bùi Xuân Thành', unit: 'Ban TVQT' },
+            { name: 'Nguyễn Minh Thao', unit: 'Ban PC' },
+            { name: 'Trương Phương Thảo', unit: 'Ban CS' },
+            { name: 'Nguyễn Thị Thu', unit: 'Ban NVT' },
+            { name: 'Nguyễn Thị Ngọc Thu', unit: 'Ban QLTT' },
+            { name: 'Vũ Thị Thúy', unit: 'Ban DTTK' },
+            { name: 'Nguyễn Thu Thủy', unit: 'Ban NVT' },
+            { name: 'Vũ Thị Thu Thủy', unit: 'Ban NVT' },
+            { name: 'Phạm Quang Toàn', unit: 'Ban CĐS' },
+            { name: 'Đoàn Xuân Toản', unit: 'Văn phòng' },
+            { name: 'Nguyễn Thu Trà', unit: 'Ban QLTT' },
+            { name: 'Đào Anh Trang', unit: 'Ban QLTT' },
+            { name: 'Lưu Nguyên Trí', unit: 'Ban CĐS' },
+            { name: 'Nguyễn Thị Trinh', unit: 'Ban NVT' },
+            { name: 'Nguyễn Tiến Trung', unit: 'Ban KT' },
+            { name: 'Nguyễn Xuân Tú', unit: 'Ban TCCB' },
+            { name: 'Đỗ Hoàng Tuấn', unit: 'Ban NVT' },
+            { name: 'Nguyễn Anh Tuấn', unit: 'Ban NVT' },
+            { name: 'Nguyễn Mạnh Tùng', unit: 'Ban CĐS' },
+            { name: 'Lê Thị Thanh Vân', unit: 'CCT DNL' },
+
         ];
         
         // --- Ánh xạ các key câu hỏi với văn bản đầy đủ ---
@@ -1181,3 +1255,4 @@
     </script>
 </body>
 </html>
+
